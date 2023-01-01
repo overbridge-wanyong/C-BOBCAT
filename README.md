@@ -7,6 +7,7 @@ torch==1.12.1
 ### Data
 You can download the preprocessed datasets from [Google Drive](https://drive.google.com/file/d/18jMoNc12cfngyD796YITRiEp1KIq4oVu/view?usp=sharing) to `/data/` folder. Preprocessing scirpts can be found in `utils/` folder.
 ### Training
+Train C-BOBCAT
 ``` bash
 python train.py
     --dataset {mapt-math, mapt-read}
@@ -15,5 +16,12 @@ python train.py
     --lamda {0.003, 0.001, 0.03, 0.01}
     --cuda
     --gumbel
-    
 ```
+Train IRT-based Model
+``` bash
+python irt.py
+    --dataset {mapt-math, mapt-read}
+    --model {irt-active, irt-random}
+    --n_query {2, 4, 8}
+```
+
