@@ -37,15 +37,15 @@ hyperparameters = [
 Train IRT-based Model
 ``` bash
 python irt.py
-    --dataset {mapt-math, mapt-read}
-    --model {irt-active, irt-random}
-    --n_query {2, 4, 8}
+    --dataset mapt-math
+    --model irt-active
+    --n_query 8
 ```
 Hyperparameter ranges are:
 ``` bash
 hyperparameters = [
     [('dataset',), ['mapt-math', 'mapt-read']],
-    [('model',), ['binn-biased', 'biirt-biased']],
+    [('model',), ['irt-active', 'irt-random']],
     [('fold',), [ 1, 2, 3, 4, 5 ]],
     [('n_query',), [2, 4, 8]]
 ]
