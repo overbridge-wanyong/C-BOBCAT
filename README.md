@@ -4,6 +4,5 @@ This repository uses the following packages in Python3.
 ``` bash
 torch==1.12.1
 ```
+### Training
 
-
-Refer to `requirements.txt`
