@@ -41,4 +41,12 @@ python irt.py
     --model {irt-active, irt-random}
     --n_query {2, 4, 8}
 ```
+Hyperparameter ranges are:
+``` bash
+hyperparameters = [
+    [('dataset',), ['mapt-math', 'mapt-read']],
+    [('model',), ['binn-biased', 'biirt-biased']],
+    [('fold',), [ 1, 2, 3, 4, 5 ]],
+    [('n_query',), [2, 4, 8]]
+]
 
