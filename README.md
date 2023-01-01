@@ -4,5 +4,5 @@ This repository uses the following packages in Python3.
 ``` bash
 torch==1.12.1
 ```
-### Training
-You can download the preprocessed datasets from [Google Drive](https://drive.google.com/file/d/18jMoNc12cfngyD796YITRiEp1KIq4oVu/view?usp=sharing)
+### Data
+You can download the preprocessed datasets from [Google Drive](https://drive.google.com/file/d/18jMoNc12cfngyD796YITRiEp1KIq4oVu/view?usp=sharing) to /data/ folder. Preprocessing scirpts can be found in utils/ folder.
